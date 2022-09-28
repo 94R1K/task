@@ -26,9 +26,8 @@
 3. Удалите [secret/gsheets_cached_config.json](./secret/gsheets_cached_config.json), чтобы использовать свою копию таблицы. В этом случае будет создана новая копия [исходной таблицы](https://docs.google.com/spreadsheets/d/1LTejK-Oo7L1bFreBIIcEZnF1W1RCC1s_jos3EuIP0jI) на диске сервис-аккаунта из [secret/credentials.json](./secret/credentials.json) на аккаунты, описанные в [WorkerScript/lib/config.py .EMAIL_ADDRS](./WorkerScript/lib/config.py). В консоль выводится ссылка на таблицу. Сама копия лежит во втором листе.
 4. Проверить доступ (credentials) можно, запустив скрипт [./secret/test_service_account.py](./secret/test_service_account.py).
 Если успешно, в консоли выведутся 2 колонки тестовой таблицы.
-5. создать в папке secret/ файл [db.json](./secret/db.json) вида:
+5. создать в папке secret/ файл [db.json](./secret/db.json) вида (значения заменить на актуальные):
 ```json
-// значения заменить на актуальные.
 {
   "DB_NAME": "postgres_db",
   "USER": "yaroslav",
